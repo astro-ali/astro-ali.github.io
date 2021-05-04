@@ -1,0 +1,341 @@
+.gallery-header {
+    width: 100%;
+    height: 100vh;
+    background: url('../img/photography3.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #000000;
+        opacity: 0.25;
+    }
+}
+
+.padding-top {
+    padding-top: 9.5rem;
+
+    @include breakpoint-down(medium){
+        padding-top: 3.5rem;
+    }
+
+    @include breakpoint-down(small){
+        padding-top: 1rem;
+    }
+}
+
+.big-title {
+    font-size: 66px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    overflow: hidden;
+    border-right: .1rem solid #fff;
+    white-space: nowrap;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.25rem;
+    width: 670px;
+    
+    @include breakpoint-down(medium){
+        font-size: 58px;
+        width: 600px;
+    }
+
+    @include breakpoint-down(small){
+        font-size: 48px;
+        width: 520px;
+    }
+
+    @include breakpoint-down(verysmall){
+        letter-spacing: 0.06rem;
+        font-size: 30px;
+        width: 300px;
+    }
+
+    @include breakpoint-down(extrasmall){
+        letter-spacing: 0.02rem;
+        font-size: 27px;
+        width: 260px;
+    }
+
+    animation:
+        typing-large 2s steps(40, end),
+        blink-caret .75s step-end infinite;
+
+    @include breakpoint-down(medium){
+        animation:
+        typing-medium 2s steps(40, end),
+        blink-caret .75s step-end infinite;
+    }
+
+    @include breakpoint-down(small){
+        animation:
+        typing-small 2s steps(40, end),
+        blink-caret .75s step-end infinite;
+    }
+
+    @include breakpoint-down(verysmall){
+        animation:
+        typing-verysmall 2s steps(40, end),
+        blink-caret .75s step-end infinite;
+    }
+
+    @include breakpoint-down(extrasmall){
+        animation:
+        typing-extrasmall 2s steps(40, end),
+        blink-caret .75s step-end infinite;
+    }
+}
+
+@keyframes typing-large {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 670px;
+    }
+}
+
+@keyframes typing-medium {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 600px;
+    }
+}
+
+@keyframes typing-small {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 520px;
+    }
+}
+
+@keyframes typing-verysmall {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 300px;
+    }
+}
+
+@keyframes typing-extrasmall {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 260px;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #fff;
+    }
+}
+
+.photo-text {
+    padding: 0px 50px;
+    font-weight: 300;
+    font-size: 22px;
+    text-align: center;
+}
+
+.gallery {
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+
+    &-read-more {
+        margin-top: 7.5rem;
+
+        @include breakpoint-down(small){
+            margin-top: 7rem;
+        }
+
+        @include breakpoint-down(verysmall){
+            margin-top: 5rem;
+        }
+
+        @include breakpoint-down(extrasmall){
+            margin-top: 7rem;
+        }
+
+        h3 {
+            font-weight: 300;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.gallery-container {
+    padding: 20px 0;
+    margin: auto;
+}
+
+.gallery-title {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    h3 {
+        padding-top: 6rem;
+        padding-bottom: 21px;
+        font-size: 36px;
+        font-weight: 200;
+    }
+}
+
+.image-gallery {
+    width: 97.5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 0.3rem;
+    padding-bottom: 1rem;
+
+    @include breakpoint-down(medium){
+        padding-bottom: 0.75rem;
+    }
+
+    @include breakpoint-down(verysmall){
+        padding-bottom: 0.6rem;
+    }
+
+    grid-template-areas:
+        'img-1 img-2 img-3 img-11'
+        'img-4 img-9 img-9 img-10'
+        'img-6 img-6 img-12 img-12'
+        'img-5 img-7 img-13 img-13'
+    ;
+
+    @include breakpoint-down(medium){
+        grid-template-areas:
+        'img-1 img-1 img-2 img-2'
+        'img-3 img-3 img-11 img-11'
+        'img-9 img-9 img-9 img-9'
+        'img-4 img-4 img-10 img-10'
+        'img-6 img-6 img-6 img-6'
+        'img-12 img-12 img-12 img-12'
+        'img-13 img-13 img-13 img-13'
+        'img-7 img-7 img-5 img-5'
+    ;
+    }
+
+    @include breakpoint-down(verysmall){
+        grid-template-areas:
+        'img-1 img-1 img-1 img-1'
+        'img-2 img-2 img-2 img-2'
+        'img-3 img-3 img-3 img-3'
+        'img-11 img-11 img-11 img-11'
+        'img-9 img-9 img-9 img-9'
+        'img-4 img-4 img-4 img-4'
+        'img-10 img-10 img-10 img-10'
+        'img-6 img-6 img-6 img-6'
+        'img-12 img-12 img-12 img-12'
+        'img-13 img-13 img-13 img-13'
+        'img-7 img-7 img-7 img-7'
+        'img-5 img-5 img-5 img-5'
+        ;
+    }
+}
+
+.image-gallery a {
+    width: 100%;
+    height: 35rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: .25s ease-in-out;
+
+    @include breakpoint-down(verysmall){
+        margin-bottom: 0.2rem;
+    }
+}
+
+.img-1 {
+    grid-area: img-1;
+    background-image: url('../img/compressed/img1.jpg');
+}
+
+.img-2 {
+    grid-area: img-2;
+    background-image: url('../img/compressed/img2.jpg');
+}
+
+.img-3 {
+    grid-area: img-3;
+    background-image: url('../img/compressed/img3.jpg');
+}
+
+.img-4 {
+    grid-area: img-4;
+    background-image: url('../img/compressed/img4.jpg');
+}
+
+.img-5 {
+    grid-area: img-5;
+    background-image: url('../img/compressed/img5.jpg');
+}
+
+.img-6 {
+    grid-area: img-6;
+    background-image: url('../img/img-6.jpg');
+}
+
+.img-7 {
+    grid-area: img-7;
+    background-image: url('../img/compressed/img7.jpg');
+}
+
+.img-9 {
+    grid-area: img-9;
+    background-image: url('../img/compressed/img9.jpg');
+}
+
+.img-10 {
+    grid-area: img-10;
+    background-image: url('../img/compressed/img10.jpg');
+}
+
+.img-11 {
+    grid-area: img-11;
+    background-image: url('../img/compressed/img11.jpg');
+}
+
+.img-12 {
+    grid-area: img-12;
+    background-image: url('../img/img-12.jpg');
+}
+
+.img-13 {
+    grid-area: img-13;
+    background-image: url('../img/compressed/img13.jpg');
+}
+
+.scroll-top-gallery{
+    background-color: #0c695d;
+    color: #fff;
+}
+
+.scroll-top-gallery:hover{
+    background-color: #fff;
+    color: #0c695d;
+}

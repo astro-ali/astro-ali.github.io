@@ -1,0 +1,194 @@
+.hero-image {
+    width: 100%;
+    height: 100vh;
+    background: url('../img/hero.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #000000;
+        opacity: 0.15;
+    }
+
+    .social-media {
+        position: absolute;
+        top: 45%;
+        left: 0.5%;
+
+        .social-media-item a img{
+            width: 25px;
+            height: 25px;
+            margin-bottom: 12px;
+        }
+    }
+}
+.jumbotron {
+    position: relative;
+    top: 10rem;
+    background: none;
+    text-align: center;
+    color: white;
+
+    @include breakpoint-down(verysmall){
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .display-4 {
+        font-weight: 500;
+    }
+
+    .big-logo {
+        margin-bottom: 0;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 100px;
+        font-weight: 700;
+        letter-spacing: 15px;
+
+        @include breakpoint-down(medium){
+            font-size: 80px;
+        }
+
+        @include breakpoint-down(small){
+            font-size: 60px;
+        }
+
+        @include breakpoint-down(verysmall){
+            font-size: 52px;
+        }
+
+        @include breakpoint-down(extrasmall){
+            font-size: 38px;
+        }
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 22px;
+
+        @include breakpoint-down(medium){
+            padding: 0 10px;
+        }
+
+        @include breakpoint-down(verysmall){
+            margin-bottom: 0;
+            padding: 0 28px;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        @include breakpoint-down(extrasmall){
+            font-size: 18px;
+            text-align: center;
+
+        }
+    }
+}
+
+.read-more {
+    margin-top: 10rem;
+
+    @include breakpoint-down(medium){
+        margin-top: 6rem;
+    }
+
+    @include breakpoint-down(verysmall){
+        margin-top: 5rem;
+    }
+
+    h3 {
+        font-weight: 300;
+        margin-bottom: 1rem;
+    }
+}
+
+.about-me {
+    height: 760px;
+    background-color: #1b1b1b;
+
+    @include breakpoint-down(medium){
+        height: auto;
+    }
+
+    &-title {
+        padding-top: 9rem;
+        padding-bottom: 4rem;
+        color: white;
+        letter-spacing: 6px;
+
+        @include breakpoint-down(medium){
+            padding-top: 6rem;
+            padding-bottom: 2rem;
+        }
+
+        @include breakpoint-down(verysmall){
+            padding-left: 25px;
+            padding-top: 3rem;
+        }
+
+        h2 {
+            font-weight: 300;
+            font-size: 38px;
+        }
+    }
+
+    &-text {
+        color: white;
+        padding-bottom: 6.25rem;
+
+        @include breakpoint-down(medium){
+            padding-bottom: 2rem;
+        }
+
+        @include breakpoint-down(verysmall){
+            padding-left: 25px;
+            padding-right: 30px;
+        }
+
+        p {
+            font-size: 19px;
+            line-height: 1.6;
+            text-align: justify;
+
+            @include breakpoint-down(medium){
+                padding-bottom: 4rem;
+            }
+        }
+    }
+}
+
+.lead {
+    padding: 0px 210px;
+    text-align: left;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 18px; /* Place the button at the bottom of the page */
+    right: 16px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 8px 12px; /* Some padding */
+    border-radius: 2px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    transition: all .3s ease-in-out;
+  }
+
+.scroll-top-home{
+    background-color: #cc0b5b;
+    color: #fff;
+}
+
+.scroll-top-home:hover{
+    background-color: #fff;
+    color: #cc0b5b;
+}

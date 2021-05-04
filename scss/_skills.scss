@@ -1,0 +1,129 @@
+.skills {
+    background-color: #f0f0f0;
+
+    &-title {
+        padding-top: 5rem;
+        padding-bottom: 2.75rem;
+
+        @include breakpoint-down(small){
+            padding-top: 2.75rem;
+            padding-bottom: 2rem;
+        }
+
+        @include breakpoint-down(small){
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 28px;
+            font-weight: 300;
+        }
+    }
+
+    &-cards {
+        height: 220px;
+        margin-bottom: 1rem;
+
+        @include breakpoint-down(medium){
+            margin-bottom: 0rem;
+            height: 165px;
+        }
+    }
+
+    &-my-card {
+        height: auto;
+        background-color: white;
+        border-radius: 2px;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
+        text-align: center;
+
+        img {
+            margin-top: 10px;
+            width: 88%;
+        }
+
+        h5 {
+            color: #2a454e;
+            font-size: 18px;
+            margin-top: 10px;
+            padding-bottom: 20px;
+            font-weight: 300;
+
+            @include breakpoint-down(medium){
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.col-sm-2 {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 180px;
+
+    @include breakpoint-down(medium){
+        padding: 0 4px;
+    }
+}
+
+.first-row {
+    @include breakpoint-down(small){
+        height: 420px;
+    }
+
+    @include breakpoint-down(verysmall){
+        height: 600px;
+    }
+}
+
+.second-row {
+    @include breakpoint-down(small){
+        height: 300px;
+        margin-bottom: 0;
+    }
+
+    @include breakpoint-down(verysmall){
+        height: 450px;
+    }
+}
+
+.row-1 {
+    @include breakpoint-down(small){
+        margin-bottom: 20px;
+    }
+}
+
+.row-2 {
+    @include breakpoint-down(small){
+        margin-top: 20px;
+    }
+}
+
+.pm-auto {
+    @include breakpoint-down(verysmall){
+        height: 225px;
+        margin-top: 0;
+    }
+}
+
+.height-auto {
+    @include breakpoint-down(verysmall){
+        height: 225px;
+    }
+}
+
+.skills-container {
+    @include breakpoint-down(medium){
+        padding: 0 0;
+        padding-bottom: 40px;
+    }
+
+    @include breakpoint-down(small){
+        padding-top: 30px;
+        padding-bottom: 0;
+    }
+
+    @include breakpoint-down(verysmall){
+        padding-top: 0;
+    }
+}

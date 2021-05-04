@@ -1,0 +1,154 @@
+.experience {
+    background-color: #018673;
+    height: auto;
+
+    &-row {
+        height: 400px;
+    }
+
+    &-title {
+        padding-top: 3.5rem;
+        padding-bottom: 2.75rem;
+        color: #fff;
+
+        @include breakpoint-down(verysmall){
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 36px;
+            font-weight: 100;
+        }
+    }
+
+    .col-md-6 {
+        height: 400px;
+    }
+
+    &-front {
+
+        &-title {
+            color: #fff;
+            margin-bottom: 20px;
+
+            @include breakpoint-down(verysmall){
+                text-align: center;
+            }
+            
+            h5 {
+                font-size: 26px;
+                font-weight: 500;
+            }
+        }
+
+        &-list {
+            color: #fff;
+
+            ul {
+                padding-left: 18px;
+
+                li {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    &-back {
+
+        &-title {
+            color: #fff;
+            margin-bottom: 20px;
+
+            @include breakpoint-down(verysmall){
+                text-align: center;
+            }
+            
+            h5 {
+                font-size: 26px;
+                font-weight: 500;
+            }
+        }
+
+        &-list {
+            color: #fff;
+
+            ul {
+                padding-left: 18px;
+
+                li {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    .education {
+
+        padding-bottom: 3rem;
+
+        @include breakpoint-down(medium){
+            margin-top: 13rem;
+            padding-bottom: 3rem;
+        }
+
+        @include breakpoint-down(small){
+            margin-top: 20rem;
+            padding-bottom: 3rem;
+        }
+
+        @include breakpoint-down(verysmall){
+            margin-top: 35rem;
+            padding-bottom: 3rem;
+        }
+
+        @include breakpoint-down(extrasmall){
+            margin-top: 64rem;
+            padding-bottom: 3rem;
+        }
+
+        &-title {
+            color: #fff;
+            margin-bottom: 20px;
+
+            @include breakpoint-down(verysmall){
+                text-align: center;
+            }
+            
+            h5 {
+                font-size: 26px;
+                font-weight: 500;
+            }
+        }
+
+        &-list {
+            color: #fff;
+
+            ul {
+                padding-left: 18px;
+                padding-bottom: 40px;
+                margin-bottom: 0px;
+
+                li {
+                    margin-bottom: 10px;
+
+                    @include breakpoint-down(verysmall){
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mb-vs-12 {
+    @include breakpoint-down(verysmall){
+        margin-bottom: 9rem;
+    }
+}
+
+.mbf-50 {
+    @include breakpoint-down(extrasmall){
+        margin-bottom: 26rem;
+    }
+}

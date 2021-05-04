@@ -1,0 +1,181 @@
+.navbar {
+    height: 6rem;
+    transition: 400ms all ease-in-out;
+
+    @include breakpoint-down(medium){
+        background-color: white;
+        height: 3.5rem;
+    }
+    
+    @include breakpoint-down(small){
+        position: relative;
+    }
+
+    .navbar-collapse {
+        @include breakpoint-down(medium){
+            background-color: white;
+        }
+    }
+}
+
+.top-nav {
+    height: 3.5rem;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
+    transition: 400ms all ease-in-out;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 24px;
+    margin-right: 0rem;
+    color: white;
+
+    @include breakpoint-down(medium){
+        color: #191919;
+    }
+
+    &:hover {
+        color: white;
+        @include breakpoint-down(medium){
+            color: #191919;
+        }
+    }
+
+    span {
+        display: inline-block;
+        color: #ff0f6b;
+        width: 50%;
+    }
+}
+
+.navbar-brand-top{
+    color: #222222;
+
+    &:hover {
+        color: #222222;
+    }
+}
+
+.nav-item {
+    @include breakpoint-down(medium){
+        padding: 10px 0;
+    }
+}
+
+.padding-b {
+    @include breakpoint-down(medium){
+        padding-bottom: 25px;
+    }
+}
+
+.nav-link {
+    color: #ffffff;
+
+    @include breakpoint-down(medium){
+        color: #191919;
+    }
+
+    &:hover {
+        color: #ffffff;
+
+        @include breakpoint-down(medium){
+            color: #191919;
+        }
+    }
+}
+
+.nav-link-top {
+    color: #191919;
+
+    &:hover {
+        color: #191919;  
+    }
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    color: #000 !important;
+}
+
+.header__menu {
+    // mobile menu
+    z-index: 1;
+
+    > span {
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: #191919;
+        transition: all 350ms ease-in-out;
+        transform-origin: 3px 1px;
+
+        &:not(:last-child){
+            margin-bottom: 6px;
+        }
+    }
+}
+
+.open {
+
+    #btnHamburger {
+        > span:first-child {
+            transform: rotate(45deg);
+        }
+    
+        > span:nth-child(2) {
+            opacity: 0;
+        }
+    
+        > span:last-child {
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+.dark-link {
+    color: #191919;
+
+    &:hover {
+        color: #018673;
+    }
+}
+
+.dark-logo {
+    color: #1e3944;
+
+    &:hover {
+        color: #1e3944;
+    }
+}
+
+.dark-nav {
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
+}
+
+.new-btn {
+    border: 1px solid #00c8ac;
+    border-radius: 2px;
+    padding: 7px 17px;
+    transition: 350ms all ease-in-out;
+    background-color: #00c8ac;
+    color: #fff; 
+
+    @include breakpoint-down(medium){
+        background-color: #fff;
+        color: #191919; 
+        border: none;
+        border-radius: none;
+    }
+
+    &:hover {
+        background-color: #fff;
+        color: #00c8ac;
+    }
+
+}
+

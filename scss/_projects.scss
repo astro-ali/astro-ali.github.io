@@ -1,0 +1,57 @@
+.projects {
+    background-color: #fff;
+
+    &-title {
+        text-align: center;
+        padding-top: 3.5rem;
+        padding-bottom: 2.75rem;
+        color: #191919;
+
+        h3 {
+            font-size: 32px;
+            font-weight: 300;
+        }
+    }
+
+    &-title2 {
+        padding-top: 10px;
+
+        @include breakpoint-down(medium){
+            padding-top: 2.75rem;
+        }
+    }
+
+    &-my-link {
+        margin-top: 0px;
+    }
+}
+
+#easy-bank-btn {
+    margin-top: 0px;
+}
+
+#arduino {
+    width: 62%;
+}
+
+.web-color {
+    color: #0ba891;
+}
+
+.web-coming-soon {
+    color: #0ba891;
+
+    &:hover {
+        color: #0ba891;
+    }
+}
+
+.future {
+    @include breakpoint-down(medium){
+        padding-bottom: 3rem;
+    }
+
+    @include breakpoint-down(verysmall){
+        padding-bottom: 0;
+    }
+}

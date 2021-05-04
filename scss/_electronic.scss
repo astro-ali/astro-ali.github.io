@@ -1,0 +1,31 @@
+.e-header {
+    width: 100%;
+    height: 100vh;
+    background: url('../img/electronic-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #000000;
+        opacity: 0.2;
+    }
+}
+
+.electronic-read-more {
+    margin-top: 6rem;
+
+    @include breakpoint-down(verysmall){
+        margin-top: 4rem;
+    }
+
+    h3 {
+        font-size: 34px;
+        font-weight: 300;
+        margin-bottom: 1rem;
+    }
+}

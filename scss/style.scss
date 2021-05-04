@@ -1,0 +1,27 @@
+// for the index.html and the Public sass files
+
+@import "mixins";
+@import "global";
+@import "navbar";
+@import "header";
+@import "lastest";
+@import "footer";
+
+// Pravite sass files for web.html
+
+@import "web-header";
+@import "skills";
+@import "experience";
+@import "projects";
+
+// private sass files for contact.html
+
+@import "contact";
+
+// private sass files for gallary.html
+
+@import "gallary";
+
+// private sass files for electronic.html
+
+@import "electronic";

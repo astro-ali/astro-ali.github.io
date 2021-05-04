@@ -1,0 +1,191 @@
+.hero-background {
+    background-color: rgb(247, 247, 247);
+    height: 100vh;
+
+    @include breakpoint-down(small){
+        height: 165vh;
+    }
+
+    @include breakpoint-down(verysmall){
+        height: 152vh;
+    }
+
+    &-carton {
+        align-self: flex-end;
+
+        img{
+            margin-left: 100px;
+            margin-top: 110px;
+            width: 80%;
+
+            @include breakpoint-down(small){
+                width: 70%;
+                margin-left: 90px;
+            }
+
+            @include breakpoint-down(verysmall){
+                margin-top: 0px;
+                padding-top: 40px;
+                margin-left: 70px;
+            }
+
+            @include breakpoint-down(extrasmall){
+                width: 60%;
+            }
+        }
+    }
+
+    .jumbotron {
+        padding-top: 50px;
+        position: relative;
+        top: 8rem;
+        background: none;
+        text-align: left;
+        color: #fff;
+
+        @include breakpoint-down(medium){
+            padding-top: 0;
+        }
+
+        @include breakpoint-down(small){
+            text-align: center;
+        }
+    
+        @include breakpoint-down(verysmall){
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    
+        .display-4 {
+            font-weight: 500;
+        }
+    
+        .big-logo {
+            color: #00c8ac;
+            margin-top: 0px;
+            margin-bottom: 12px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 43px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            
+            @include breakpoint-down(medium){
+                font-size: 42px;
+            }
+
+            @include breakpoint-down(verysmall){
+                font-size: 32px;
+                padding: 0 5px;
+            }
+    
+        }
+    
+        p {
+            font-weight: 300;
+            font-size: 20px;
+            padding: 0;
+            color: #191919;
+            text-align: left;
+            margin-bottom: 35px;
+
+            @include breakpoint-down(medium){
+            font-size: 18px;
+            }
+
+            @include breakpoint-down(small){
+                font-size: 22px;
+                margin-top: 40px;
+                margin-bottom: 60px;
+                padding-left: 30px;
+                padding-right: 30px;
+                text-align: center;
+            }
+
+            @include breakpoint-down(verysmall){
+                font-size: 20px;
+            }
+
+            @include breakpoint-down(extrasmall){
+                font-size: 16px;
+            }
+        }
+    }
+    
+}
+
+.web-read-more {
+    margin-top: 11rem;
+    align-items: center;
+    text-align: center;
+
+    @include breakpoint-down(medium){
+        margin-top: 6.5rem;
+    }
+
+    @include breakpoint-down(small){
+        margin-top: 2rem;
+    }
+
+    @include breakpoint-down(verysmall){
+        margin-top: 3rem;
+    }
+    h3 {
+        color: #191919;
+        font-size: 26px;
+        font-weight: 300;
+        margin-bottom: 1rem;
+    }
+}
+
+#header-contact {
+    padding: 10px 20px;
+    background-color: #00c8ac;
+    color: #fff;
+    border-radius: 3px ;
+
+    &:hover {
+        background-color: #fff;
+        color: #00c8ac;
+
+        @include breakpoint-down(medium){
+            background-color: #00c8ac;
+            color: #fff;
+
+        }
+    }
+
+    @include breakpoint-down(verysmall){
+        margin-bottom: 300px;
+    }
+}
+
+#web-contact {
+    @include breakpoint-down(medium){
+        color: #191919;
+        padding-bottom: 20px;
+    }
+}
+
+.web-header-container {
+    padding-top: 2.5rem;
+
+    @include breakpoint-down(medium){
+        padding-top: 0;
+    }
+}
+
+.scroll-top-button{
+    background-color: #02ac95;
+    color: #fff;
+}
+
+.scroll-top-button:hover{
+    background-color: #fff;
+    color: #02ac95;
+}
+
+.hero-button {
+    @include breakpoint-down(verysmall){
+        margin-bottom: 140px;
+    }
+}
