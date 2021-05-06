@@ -1463,9 +1463,9 @@ a:hover {
   background-color: white;
 }
 
-@media (max-width: 36em) {
+@media (max-width: 48em) {
   .contact-header {
-    height: 130vh;
+    height: 135vh;
   }
 }
 
@@ -1501,9 +1501,63 @@ a:hover {
   height: 140px !important;
 }
 
+textarea {
+  resize: none;
+}
+
 @media (max-width: 62em) {
   .contact-page {
     color: white !important;
+  }
+}
+
+.submit-status {
+  margin-top: 40px;
+  text-align: center;
+}
+
+@media (max-width: 48em) {
+  .submit-status {
+    margin-top: 15px;
+  }
+}
+
+#my-form-status.alert {
+  margin-top: 40px;
+  text-align: center;
+  display: none;
+}
+
+@media (max-width: 48em) {
+  #my-form-status.alert {
+    margin-top: 20px;
+  }
+}
+
+#my-form-status.success {
+  display: block;
+  animation: status 4s ease forwards;
+}
+
+#my-form-status.error {
+  display: block;
+  background-color: #ffbfbf;
+  color: #6e2828;
+  animation: status 4s ease forwards;
+}
+
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
   }
 }
 

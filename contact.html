@@ -48,24 +48,22 @@
               <div class="col-md-2 col-lg-3"></div>
               <div class="col-md-8 col-lg-6">
                 <div class="skills-title contact-title"><h3>Send Me an email</h3></div>
-                <form>
+                <form id="my-form" action="https://formspree.io/f/xwkavyrl" method="POST">
                   <div class="form-group">
                     <label for="formGroupExampleInput">Name</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput">
+                    <input type="text" name="name_field" class="form-control" id="formGroupExampleInput">
                   </div>
                   <div class="form-group">
                     <label for="formGroupExampleInput2">Email Address</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2">
+                    <input type="email" name="email_field" class="form-control" id="formGroupExampleInput2">
                   </div>
-                </form>
-                <form>
                   <div class="form-group">
                     <label for="formGroupExampleInput">Subject</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput">
+                    <input type="text" name="subject_field" class="form-control" id="formGroupExampleInput">
                   </div>
                   <div class="form-group">
                     <label for="formGroupExampleInput2">Reason</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
+                    <select class="form-control" name="reason_field" id="exampleFormControlSelect1">
                       <option>Just to Say Hi</option>
                       <option>Business</option>
                       <option>Social Media</option>
@@ -75,12 +73,13 @@
                   </div>
                   <div class="form-group">
                     <label for="exampleFormControlTextarea1">The Message</label>
-                    <textarea class="form-control message" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea class="form-control message" name="message_field" id="exampleFormControlTextarea1" rows="3"></textarea>
                   </div>
+                  <div class="contact-btn-container">
+                  <button type="submit" class="btn contact-btn" id="submit-form">Submit</button>
+                  </div>
+                  <div id="my-form-status" class="alert alert-success" role="alert"></div>
                 </form>
-                <div class="contact-btn-container">
-                <button type="submit" class="btn contact-btn">Submit</button>
-                </div>
               </div>
               <div class="col-md-2 col-lg-4"></div>
           </div>
@@ -143,5 +142,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
   </body>
 </html>

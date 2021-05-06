@@ -14,8 +14,8 @@
     height: 135vh;
     background-color: white;
 
-    @include breakpoint-down(verysmall){
-        height: 130vh;
+    @include breakpoint-down(small){
+        height: 135vh;
     }
 }
 
@@ -53,8 +53,60 @@
     height: 140px !important;
 }
 
+textarea {
+    resize: none;
+}
+
 .contact-page {
     @include breakpoint-down(medium){
         color: white !important;
+    }
+}
+
+.submit-status {
+    margin-top: 40px;
+    text-align: center;
+
+    @include breakpoint-down(small){
+        margin-top: 15px;
+    }
+}
+
+#my-form-status.alert {
+    margin-top: 40px;
+
+    @include breakpoint-down(small){
+        margin-top: 20px;
+    }
+    text-align: center;
+    display: none;
+}
+    
+#my-form-status.success {
+    display: block;
+    animation: status 4s ease forwards;
+}
+
+#my-form-status.error {
+    display: block;
+    background-color: #ffbfbf;
+    color: #6e2828;
+    animation: status 4s ease forwards;
+}
+
+@keyframes status {
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    100%{
+        opacity: 0;
+        pointer-events: none;
     }
 }
